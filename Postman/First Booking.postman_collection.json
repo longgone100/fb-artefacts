@@ -1,0 +1,706 @@
+{
+	"info": {
+		"_postman_id": "8c6c1007-60f1-4834-a389-f78f78dec7e2",
+		"name": "First Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "System APIs",
+			"item": [
+				{
+					"name": "First Coach",
+					"item": [
+						{
+							"name": "/coach/firstcoach/routes",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "ronald",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Cx4a$$41",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-sapi-firstcoach}}/api/coach/firstcoach/routes",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-sapi-firstcoach}}",
+									"path": [
+										"api",
+										"coach",
+										"firstcoach",
+										"routes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/coach/firstcoach/routes Copy",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "ronald",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Cx4a$$41",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/api/coach/FirstCoach/routes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"coach",
+										"FirstCoach",
+										"routes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/coach/firstcoach/routes [no auth]",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-sapi-firstcoach}}/api/coach/firstcoach/routes",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-sapi-firstcoach}}",
+									"path": [
+										"api",
+										"coach",
+										"firstcoach",
+										"routes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/coach/firstcoach/schedules",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "ronald",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Cx4a$$41",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-sapi-firstcoach}}/api/coach/firstcoach/schedules?departureLocationCode=BEN-SG&destinationLocationCode=KLG-MY",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-sapi-firstcoach}}",
+									"path": [
+										"api",
+										"coach",
+										"firstcoach",
+										"schedules"
+									],
+									"query": [
+										{
+											"key": "departureLocationCode",
+											"value": "BEN-SG"
+										},
+										{
+											"key": "destinationLocationCode",
+											"value": "KLG-MY"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TransNational Copy",
+					"item": [
+						{
+							"name": "/coach/transnational/routes",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-sapi-transnational}}/api/coach/firstnational/routes",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-sapi-transnational}}",
+									"path": [
+										"api",
+										"coach",
+										"firstnational",
+										"routes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/coach/transnational/schedules",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-sapi-transnational}}/api/coach/firstnational/schedules?departureLocationCode=ABC&destinationLocationCode=XYZ",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-sapi-transnational}}",
+									"path": [
+										"api",
+										"coach",
+										"firstnational",
+										"schedules"
+									],
+									"query": [
+										{
+											"key": "departureLocationCode",
+											"value": "ABC"
+										},
+										{
+											"key": "destinationLocationCode",
+											"value": "XYZ"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Process APIs",
+			"item": [
+				{
+					"name": "Bookings",
+					"item": [
+						{
+							"name": "/booking/coach/routes [FirstCoach]",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-papi-bookings}}/api/booking/coach/routes?companyCode=FirstCoach&departureLocationCode=BEN-SG",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-papi-bookings}}",
+									"path": [
+										"api",
+										"booking",
+										"coach",
+										"routes"
+									],
+									"query": [
+										{
+											"key": "companyCode",
+											"value": "FirstCoach"
+										},
+										{
+											"key": "departureLocationCode",
+											"value": "BEN-SG"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/booking/coach/routes [TransNational]",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-papi-bookings}}/api/booking/coach/routes?companyCode=TransNational&departureLocationCode=AU-PER",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-papi-bookings}}",
+									"path": [
+										"api",
+										"booking",
+										"coach",
+										"routes"
+									],
+									"query": [
+										{
+											"key": "companyCode",
+											"value": "TransNational"
+										},
+										{
+											"key": "departureLocationCode",
+											"value": "AU-PER"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/booking/coach/routes [No Company]",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-papi-bookings}}/api/booking/coach/routes?companyCode=TransNational&departureLocationCode=AU-PER",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-papi-bookings}}",
+									"path": [
+										"api",
+										"booking",
+										"coach",
+										"routes"
+									],
+									"query": [
+										{
+											"key": "companyCode",
+											"value": "TransNational"
+										},
+										{
+											"key": "departureLocationCode",
+											"value": "AU-PER"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/booking/coach/schedules [FirstCoach]",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "ronald",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Cx4a$$41",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-papi-bookings}}/api/booking/coach/schedules?departureLocationCode=PER-AU&destinationLocationCode=PER-AU&companyCode=TransNational&requestTimezone=0800",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-papi-bookings}}",
+									"path": [
+										"api",
+										"booking",
+										"coach",
+										"schedules"
+									],
+									"query": [
+										{
+											"key": "departureLocationCode",
+											"value": "PER-AU"
+										},
+										{
+											"key": "destinationLocationCode",
+											"value": "PER-AU"
+										},
+										{
+											"key": "companyCode",
+											"value": "TransNational"
+										},
+										{
+											"key": "requestTimezone",
+											"value": "0800"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/booking/coach/schedules [TransNational]",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "ronald",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Cx4a$$41",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-papi-bookings}}/api/booking/coach/schedules?departureLocationCode=PER-AU&destinationLocationCode=MEL-AU&companyCode=FirstCoach&requestTimezone=+0800",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-papi-bookings}}",
+									"path": [
+										"api",
+										"booking",
+										"coach",
+										"schedules"
+									],
+									"query": [
+										{
+											"key": "departureLocationCode",
+											"value": "PER-AU"
+										},
+										{
+											"key": "destinationLocationCode",
+											"value": "MEL-AU"
+										},
+										{
+											"key": "companyCode",
+											"value": "FirstCoach"
+										},
+										{
+											"key": "requestTimezone",
+											"value": "+0800"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/booking/coach/schedules [TransNational] Copy",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "ronald",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Cx4a$$41",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-client-id",
+										"value": "{{clientId}}",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "{{clientSecret}}",
+										"type": "text"
+									},
+									{
+										"key": "x-correlation-id",
+										"value": "{{correlationId}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{http}}://{{host}}:{{port-papi-bookings}}/api/booking/coach/schedules?departureLocationCode=BEN-SG&destinationLocationCode=KLG-MY&companyCode=FirstCoach&requestTimezone=0800",
+									"protocol": "{{http}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port-papi-bookings}}",
+									"path": [
+										"api",
+										"booking",
+										"coach",
+										"schedules"
+									],
+									"query": [
+										{
+											"key": "departureLocationCode",
+											"value": "BEN-SG"
+										},
+										{
+											"key": "destinationLocationCode",
+											"value": "KLG-MY"
+										},
+										{
+											"key": "companyCode",
+											"value": "FirstCoach"
+										},
+										{
+											"key": "requestTimezone",
+											"value": "0800"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Expereince APIs",
+			"item": []
+		}
+	]
+}
